@@ -44,4 +44,3 @@ group :development, :test do
   gem 'bcrypt'
   gem 'rails_12factor', group: :production
 end
-ruby 2.2.1
