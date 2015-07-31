@@ -1,0 +1,29 @@
+<div>
+<h2><%= @post.title %></h2>
+<img src="<%=@post.image_url%>">
+</div>
+    <div>
+      <p><%= @post.body %></p>
+    </div>
+
+    <div class="edit">
+      <%= link_to 'Edit', edit_post_path(@post) %>
+    </div>
+    <div class= "form">
+      <%= form_for [@post, @post.comments.new] do |f|%>
+
+        <%= f.label :body, "+Comment" %>
+        <%= f.text_field :body %>
+
+      <%= f.submit %>
+      <% end %>
+    </div>
+
+      <div class="commentbox">
+        <% @comments.each do |comment| %>
+      <div class="comments">
+        <%= comment.user.username %> says: <%= comment.body %>
+        <%= link_to 'x', post_comment_path(@post, comment), :method => :delete %>
+      </div>
+  </div>
+<% end %>

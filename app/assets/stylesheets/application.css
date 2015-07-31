@@ -1,0 +1,197 @@
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.site-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background-color: gray;
+  background-image: url("http://cdn.shopify.com/s/files/1/0221/5402/products/df118e2d-c9d2-426e-8cc2-ffbab74bf8bc_zps222c4682_1024x1024.jpeg?v=1387080593");
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+}
+
+nav {
+text-align: center;
+height: 25px;
+border-bottom: 1px solid #EEEDF2;
+border-top: 1px solid gray;
+padding-bottom: 10px;
+padding-top: 10px;
+/*background-color: #EEEDF2;*/
+}
+
+.navlink{
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.site-content{
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-top: 45px;
+  padding-left: 70px;
+  padding-right: 70px;
+  /*border-left: 1px solid gray;
+  border-right: 1px solid gray;*/
+}
+
+@media (min-width: 500px) {
+    .site-content {
+      width: 80%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .site-content {
+      width: 40%;
+    }
+}
+
+
+body {
+  font-family: 'Roboto Condensed';
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: #DDD1B3;
+}
+
+li{
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+
+.postbody {
+  width: auto;
+  padding-bottom: 60px;
+  list-style-type: none;
+}
+
+.form{
+
+}
+
+.navwrap {
+  display: inline;
+  position: relative;
+}
+.navbar {
+  text-align: center;
+}
+form{
+  display: inline-block;
+  color: grey;
+  font-weight: lighter;
+}
+input {
+  width: 500px;
+  height: 25px;
+    margin-bottom: 5px;
+}
+textarea {
+  margin: 0px;
+  height: 400px;
+  width: 500px;
+}
+label {
+  display:block;
+}
+input[type=submit]{
+  background-color: #DDD1B3;
+  background-image: url("http://cdn.shopify.com/s/files/1/0221/5402/products/df118e2d-c9d2-426e-8cc2-ffbab74bf8bc_zps222c4682_1024x1024.jpeg?v=1387080593");
+  background-position: center;
+  color: white;
+  font-size: 30px;
+  font-family: 'Roboto Condensed';
+  font-weight: bold;
+  height: 35px;
+}
+input[type=submit]:hover{
+  background-image: url("http://lesterbanks.com/lxb_metal/wp-content/uploads/2015/07/Goyard-Cheveron-Pattern-in-Cinema-4D.jpg");
+  color: #DDD1B3;
+}
+h2{
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+h1{
+  color: white;
+  font-size: 70px;
+  webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+h1:hover{
+  cursor: default;
+}
+
+.time{
+  font-weight: lighter;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+
+.delete{
+  padding: 10px;
+  display: block;
+  width: 500px;
+  }
+
+img{
+  display:block;
+  margin:auto;
+  width: 100%;
+}
+
+.comments{
+  text-align: center;
+  font-weight: lighter;
+  padding: 10px;
+}
+
+.commentbox{
+  padding: 20px;
+  height: auto;
+}
+.archive{
+  text-align: center;
+}
+
+h3{
+  font-size: 28px;
+}
+
+.edit{margin: 10px;}
+/*.footerWrap{
+  background-color: red;
+  position: relative;
+	margin-top: -180px;
+	height: 180px;
+	clear:both;
+}*/

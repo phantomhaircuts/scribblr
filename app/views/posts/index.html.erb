@@ -1,0 +1,13 @@
+<% @posts.each do |post| %>
+
+  <div>
+    <h3><%= link_to post.title, post %></h3>
+    <span class="time"><%=time_ago_in_words(post.created_at)%> ago</span>
+    <img src="<%=post.image_url%>">
+  </div>
+
+  <div class="postbody">
+    <%= post.body %>
+  </div>
+
+<% end %>

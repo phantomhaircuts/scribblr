@@ -1,0 +1,7 @@
+<h2>Archive</h2>
+<% @posts.each do |post| %>
+<div class="archive">
+  <%= link_to post.title, post %>
+  <span class="time"><%=time_ago_in_words(post.created_at)%> ago</span>
+</div>
+<% end %>
