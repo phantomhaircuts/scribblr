@@ -20,10 +20,11 @@
     </div>
 
       <div class="commentbox">
+      <!-- these should be indented more, since you're in a loop -->
         <% @comments.each do |comment| %>
-      <div class="comments">
-        <%= comment.user.username %> says: <%= comment.body %>
-        <%= link_to 'x', post_comment_path(@post, comment), :method => :delete %>
+          <div class="comments">
+            <%= comment.user.username %> says: <%= comment.body %>
+            <%= link_to 'x', post_comment_path(@post, comment), :method => :delete %>
+          </div>
+        <% end %>
       </div>
-  </div>
-<% end %>

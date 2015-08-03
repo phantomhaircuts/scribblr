@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   root to: 'posts#index'
 
   resources :posts do
-  resources :comments
+    # always indent one level when starting a block (do ... end)
+    resources :comments
   end
 
   get '/sign_in', to: 'users#sign_in'
